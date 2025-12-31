@@ -1,0 +1,261 @@
+.cartitems {
+  max-width: 1400px;
+  margin: 80px auto;
+  padding: 0 40px;
+}
+
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 0;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cartitems hr {
+  height: 2px;
+  background: #e2e2e2;
+  border: 0;
+  margin: 10px 0;
+}
+
+.cartitems-format {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.carticon-product-icon {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cartitems-remove-icon {
+  width: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.cartitems-remove-icon:hover {
+  transform: scale(1.2);
+}
+
+.cartitems-quantity {
+  width: 64px;
+  height: 50px;
+  border: 2px solid #ebebeb;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: default;
+  border-radius: 4px;
+}
+
+.cartitems-down {
+  display: flex;
+  margin: 100px 0;
+  gap: 200px;
+}
+
+.cartitems-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.cartitems-total h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.cartitems-total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  font-size: 18px;
+}
+
+.cartitems-total button {
+  width: 100%;
+  height: 58px;
+  outline: none;
+  border: none;
+  background: #ff5a5a;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+  margin-top: 20px;
+}
+
+.cartitems-total button:hover {
+  background: #ff4141;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 65, 65, 0.3);
+}
+
+.cartitems-promocode {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cartitems-promocode p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.cartitems-promobox {
+  width: 100%;
+  margin-top: 15px;
+  padding: 40px 24px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  display: flex;
+  gap: 15px;
+}
+
+.cartitems-promobox input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  width: 100%;
+  padding: 12px;
+}
+
+.cartitems-promobox button {
+  width: 170px;
+  height: 58px;
+  font-size: 16px;
+  background: #171717;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.cartitems-promobox button:hover {
+  background: #2c2c2c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1280px) {
+  .cartitems-down {
+    gap: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cartitems {
+    padding: 0 30px;
+    margin: 60px auto;
+  }
+
+  .cartitems-format-main {
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .carticon-product-icon {
+    height: 60px;
+    width: 60px;
+  }
+
+  .cartitems-down {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cartitems {
+    padding: 0 20px;
+    margin: 40px auto;
+  }
+
+  .cartitems-format-main {
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .cartitems-format-main p:nth-child(4),
+  .cartitems-format-main button:nth-child(4) {
+    display: none;
+  }
+
+  .cartitems-format-main p:first-child {
+    display: none;
+  }
+
+  .carticon-product-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  .cartitems-quantity {
+    width: 50px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .cartitems-total h1 {
+    font-size: 24px;
+  }
+
+  .cartitems-total-item {
+    font-size: 16px;
+  }
+
+  .cartitems-promobox {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .cartitems-promobox button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cartitems {
+    padding: 0 15px;
+  }
+
+  .cartitems-format-main {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .cartitems-format-main p:nth-child(3) {
+    display: none;
+  }
+
+  .carticon-product-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .cartitems-total h1 {
+    font-size: 20px;
+  }
+
+  .cartitems-total button {
+    font-size: 16px;
+    height: 50px;
+  }
+}
