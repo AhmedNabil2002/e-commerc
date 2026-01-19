@@ -76,4 +76,4 @@ function Cartitems() {
   )
 }
 
-export default Cartitems
+export default Cartitems;
