@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Footer } from "./components/footer/Footer";
-import Product from "./pages/shop/product";
+import Product from "./pages/shop/Product";
 
 import { Shop } from "./pages/shop/Shop";
 import Shopcategory from "./pages/shop/Shopcategory"; 
