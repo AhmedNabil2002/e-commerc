@@ -5,7 +5,9 @@ import Product from "./pages/shop/Product";
 
 import { Shop } from "./pages/shop/Shop";
 import Shopcategory from "./pages/shop/Shopcategory"; 
-import { Cart } from "./pages/shop/cart";
+import { Cart } from "./pages/shop/Cart";
+
+
 import { Loginsignup } from "./pages/login/Loginsignup";
 
 import men_banner from "./components/Assets/banner_mens.png";
